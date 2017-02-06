@@ -57,3 +57,8 @@ jspm_packages
 # MongoDB
 data/*
 !data/empty
+
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
