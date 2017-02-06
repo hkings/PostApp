@@ -6,7 +6,7 @@ passport/bcrypt authenticated log-in/sign up website with blog posting/commentin
 We go into the directory and install npm and bower dependencies and set up gulp.
 
 ```
-
+mongodb 
 npm install && bower install && gulp
 ```
 
