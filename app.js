@@ -14,13 +14,14 @@ var blogpost = require('./routes/blogpost');
  * We use mongoose for easy to read models.
  */
  var mongodb = require('mongodb');
-
+var dbConfig = require('./db');
+var mongoose = require('mongoose');
 //We need to work with "MongoClient" interface in order to connect to a mongodb server.
 var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
-var dbConfig = require('./db');
-var mongoose = require('mongoose');
+
+
 
 
 // Use connect method to connect to the Server
