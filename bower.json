@@ -1,12 +1,12 @@
 {
-  "name": "node-express-mongo-bower-gulp-template",
+  "name": "PostApp",
   "description": "",
   "main": "",
   "authors": [
-    "huyle333 <huyle333@bu.edu>"
+    "hkings <ahreyeslts@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/huyle333/node-express-mongo-bower-gulp-template",
+  "homepage": "https://github.com/hkings/PostApp",
   "private": true,
   "ignore": [
     "**/.*",
