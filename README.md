@@ -1,18 +1,5 @@
-# node-express-mongo-bower-gulp-template
+# Post APP
 
-An organized template, using node.js, express, mongodb, bower, and gulp to create a passport/bcrypt authenticated log-in/sign up website with blog posting/commenting.
-
-![Log-in Screen](https://raw.githubusercontent.com/huyle333/node-express-mongo-bower-gulp-template/master/public/images/login-screen.png "Log-in Screen")
-
-### Setup
-All instructions for setup and local development are listed in [this blog post here](http://www.slothparadise.com/recommended-node-express-mongo-bower-gulp-setup/).
-
-### Local development
-To use this template as it is, you can git clone the repo:
-
-```
-git clone https://github.com/huyle333/node-express-mongo-bower-gulp-template
-```
 
 We go into the directory and install npm and bower dependencies and set up gulp.
 
