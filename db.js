@@ -4,5 +4,5 @@
  * `use nodetest`
  */
 module.exports = {
-    'url' : 'mongodb://user1:user1@ds143539.mlab.com:43539/heroku_bc3wsd22'
+    'url' : 'mongodb://user1:metal@ds141209.mlab.com:41209/posts'
 }
