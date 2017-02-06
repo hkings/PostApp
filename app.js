@@ -14,33 +14,19 @@ var blogpost = require('./routes/blogpost');
  * We use mongoose for easy to read models.
  */
  var mongodb = require('mongodb');
-var dbConfig = require('./db');
-var mongoose = require('mongoose');
+
 //We need to work with "MongoClient" interface in order to connect to a mongodb server.
 var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
+var dbConfig = require('./db');
+var mongoose = require('mongoose');
 
+MongoClient.connect(dbConfig.url);
+
+mongoose.connect(dbConfig.url);
 
 var app = express();
-var db2;
-// Use connect method to connect to the Server
-  MongoClient.connect(dbConfig.url);
-    console.log('Connection established to', url);
-      db2=db;
-    // do some work here with the database.
-    // Initialize the app.
-      var server = app.listen(process.env.PORT || 8080, function () {
-        var port = server.address().port;
-        console.log("App now running on port", port);
-      });
-    //Close connection
-    //db.close();
-  }
-});
-//mongoose.connect(dbConfig.url);
-
-
 
 // Import of passport for user authentication and express-session for user sessions.
 var passport = require('passport');
