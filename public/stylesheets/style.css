@@ -44,7 +44,7 @@ template {
   display: none; }
 
 a {
-  background-color: black; }
+  background-color: transparent; }
 
 a:active,
 a:hover {
@@ -187,7 +187,7 @@ th {
   *,
   *:before,
   *:after {
-    background: black !important;
+    background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important; }
