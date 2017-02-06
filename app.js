@@ -22,13 +22,28 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running.
 
 
-
-
+var app = express();
+var db2;
 // Use connect method to connect to the Server
-  MongoClient.connect(dbConfig.url);
+  MongoClient.connect(dbConfig.url);, function (err, db) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    console.log('Connection established to', url);
+      db2=db;
+    // do some work here with the database.
+    // Initialize the app.
+      var server = app.listen(process.env.PORT || 8080, function () {
+        var port = server.address().port;
+        console.log("App now running on port", port);
+      });
+    //Close connection
+    //db.close();
+  }
+});
 //mongoose.connect(dbConfig.url);
 
-var app = express();
+
 
 // Import of passport for user authentication and express-session for user sessions.
 var passport = require('passport');
