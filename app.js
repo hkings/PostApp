@@ -25,18 +25,7 @@ var MongoClient = mongodb.MongoClient;
 
 
 // Use connect method to connect to the Server
-  MongoClient.connect(dbConfig.url, function (err, db) {
-  if (err) {
-    console.log('Unable to connect to the mongoDB server. Error:', err);
-  } else {
-    console.log('Connection established to', url);
-
-    // do some work here with the database.
-
-    //Close connection
-    //db.close();
-  }
-});
+  MongoClient.connect(dbConfig.url);
 //mongoose.connect(dbConfig.url);
 
 var app = express();
