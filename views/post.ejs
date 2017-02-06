@@ -26,7 +26,7 @@
 		 	<div class="row">
 		 		<%# Lists your posts if they exist. %>
 		    	<% if (yourPosts.length > 0) { %>
-		    		<h1>Your posts</h1>
+		    		<h1>Mis posts</h1>
 		    		<% for(var i=0; i < yourPosts.length; i++) { %>
 			 			<div class="col-md-3">
 			 				<p><%= yourPosts[i].title %></p>
@@ -44,7 +44,7 @@
 					<h1 class="text-center">Crear nuevo Post<h1>
 					<div>
 						<form action="/blogpost" method="POST">
-					    	<input type="text" name="title" placeholder="Title" required="required" autofocus="autofocus" class="form-control"/>
+					    	<input type="text" name="title" placeholder="Titulo" required="required" autofocus="autofocus" class="form-control"/>
 					    	<textarea type="text" name="post" placeholder="Post" required="required" class="form-control"></textarea>
 					    	<button type="submit" class="btn btn-lg btn-success btn-block">Publicar</button><span class="clearfix"></span>
 						</form>
