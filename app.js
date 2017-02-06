@@ -25,11 +25,7 @@ var MongoClient = mongodb.MongoClient;
 var app = express();
 var db2;
 // Use connect method to connect to the Server
-  MongoClient.connect(dbConfig.url);, function (err, db) {
-  if (err) {
-    process.exit(1);
-
-  } 
+  MongoClient.connect(dbConfig.url);
     console.log('Connection established to', url);
       db2=db;
     // do some work here with the database.
