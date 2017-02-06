@@ -27,8 +27,9 @@ var db2;
 // Use connect method to connect to the Server
   MongoClient.connect(dbConfig.url);, function (err, db) {
   if (err) {
-    console.log('Unable to connect to the mongoDB server. Error:', err);
-  } else {
+    process.exit(1);
+
+  } 
     console.log('Connection established to', url);
       db2=db;
     // do some work here with the database.
