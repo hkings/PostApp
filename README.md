@@ -15,4 +15,3 @@ Now that we have all the files, to develop on this template locally, you should 
 - 1rd terminal: `gulp watch`
 - 2th terminal: `npm start`
 - 3th terminal: `Extra terminal for miscellaneous commands.`
-cd node-express-mongo-bower-gulp-template
